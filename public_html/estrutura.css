@@ -1,0 +1,1162 @@
+/*
+=======================
+  GERAL
+=======================
+*/
+
+html {
+	height: 100%;
+}
+
+body {
+	background: url("estrutura/bgTexture.png");
+	background-color: #242424;
+	height:100%;
+	margin: 0px;
+}
+
+h2 {
+	color: #111111;
+	font-family: arial, verdana, sans-serif;
+	margin: 0px 0px 0px 0px;
+}
+
+h3 {
+	color: #444444;
+	font-family: arial, verdana, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+	margin: 0px 0px 0px 0px;
+}
+
+p {
+	color: #444444;
+	font-family: arial, verdana, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+	margin: 0px 0px 0px 0px;
+	text-align: justify;
+}
+
+p1 {
+	color: #222222;
+	font-family: arial, verdana, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+}
+
+/*
+=======================
+LINKS
+=======================
+*/
+
+.boletim_new a, .boletim_new a:visited, .artigo a, .artigo a:visited, .ponto a, .ponto a:visited, 
+#footer_links a, #footer_links a:visited, .boletim_post a, .boletim_post a:visited, .sobre_text a, .sobre_text a:visited,
+.artigo_text a, .artigo_textindex a, .artigo_text a:visited, .artigo_textindex a:visited, .pontod_text a, .pontod_text a:visited,
+#ensaio_text a, #ensaio_text a:visited, .bibliografia_text a, .bibliografia_text a:visited,
+.artigo_texttitle a, .artigo_texttitle a:visited, .pontod_texttitle a, .pontod_texttitle a:visited, 
+.ensaio_texttitle a, .ensaio_texttitle a:visited, #comentarios a, #comentarios a:visited, #comentarios2 a, #comentarios2 a:visited {
+	color: #111;
+	text-decoration: none;
+}
+
+.boletim_new a:hover, .artigo a:hover, .ponto a:hover, #footer_links a:hover, .boletim_post a:hover, .sobre_text a:hover,
+.artigo_text a:hover, .artigo_textindex a:hover, .pontod_text a:hover, #ensaio_text a:hover, .bibliografia_text a:hover,
+.artigo_texttitle a:hover, .pontod_texttitle a:hover, .ensaio_texttitle a:hover, #comentarios a:hover, #comentarios2 a:hover {
+	color: #111;
+	text-decoration: underline;
+}
+
+.vermais a, .vermais a:visited {
+	color: #98d769;
+	text-decoration: none;
+}
+
+.vermais a:hover {
+	color: #98d769;
+	text-decoration: underline;
+}
+
+.prox_pagina a, .prox_pagina a:visited, .voltar a, .voltar a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+.prox_pagina a:hover, .voltar a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+
+a img {
+	border: 0px;
+	text-decoration: none;
+}
+
+/*
+=======================
+TOOLTIP
+=======================
+*/
+
+span.explanation { display: none; }
+
+/*
+a.tooltip:hover span.explanation {
+	display: block;
+}
+*/
+
+a.tooltip {
+	position: relative;
+	color: #111111;
+	font-weight: bold;
+}
+
+a.tooltip:hover span.explanation,
+a.tooltip.over span.explanation {
+	display: block;
+	width: 200px;
+	height: 160px;
+	position: absolute;
+	padding: 10px;
+	background: #dadada;
+	border: 1px solid #333;
+	font-size: 11px;
+	bottom: 15px;
+	line-height: 13px;
+	left: 10px;
+	text-indent: 0px;
+	text-align: left;
+}
+
+/*
+=======================
+MENU
+=======================
+*/
+
+a#menu_inicio1 {
+	background: transparent url("menu/menu_inicio1.png") no-repeat scroll 0%;
+	display: block;	
+	height: 30px;
+	overflow: hidden;
+	text-decoration: none;
+	width: 114px;
+}
+
+a#menu_inicio2 {
+	background: transparent url("menu/menu_inicio2.png") no-repeat scroll 0%;
+	display: block;	
+	height: 30px;
+	overflow: hidden;
+	text-decoration: none;
+	width: 114px;
+}
+
+a:hover#menu_inicio1, #menu_inicio2 {
+	background: transparent url("menu/menu_inicio2.png") no-repeat scroll 0%;	
+	height: 30px;
+	text-decoration: none;
+	width: 114px;
+}
+
+a#menu_sobre1 {
+	background: transparent url("menu/menu_sobre1.png") no-repeat scroll 0%;
+	display: block;
+	height: 30px;
+	overflow: hidden;
+	text-decoration: none;
+	width: 114px;
+}
+
+a#menu_sobre2 {
+	background: transparent url("menu/menu_sobre2.png") no-repeat scroll 0%;
+	display: block;
+	height: 30px;
+	overflow: hidden;
+	text-decoration: none;
+	width: 114px;
+}
+
+a:hover#menu_sobre1, #menu_sobre2 {
+	background: transparent url("menu/menu_sobre2.png") no-repeat scroll 0%;
+	height: 30px;
+	text-decoration: none;
+	width: 114px;
+}
+
+a#menu_boletins1 {
+	background: transparent url("menu/menu_boletins1.png") no-repeat scroll 0%;
+	display: block;
+	height: 30px;
+	overflow: hidden;
+	text-decoration: none;
+	width: 114px;
+}
+
+a#menu_boletins2 {
+	background: transparent url("menu/menu_boletins2.png") no-repeat scroll 0%;
+	display: block;
+	height: 30px;
+	overflow: hidden;
+	text-decoration: none;
+	width: 114px;
+}
+
+a:hover#menu_boletins1, #menu_boletins2 {
+	background: transparent url("menu/menu_boletins2.png") no-repeat scroll 0%;
+	height: 30px;
+	text-decoration: none;
+	width: 114px;
+}
+
+a#menu_artigos1 {
+	background: transparent url("menu/menu_artigos1.png") no-repeat scroll 0%;
+	display: block;	
+	height: 30px;
+	overflow: hidden;
+	text-decoration: none;
+	width: 114px;
+}
+
+a#menu_artigos2 {
+	background: transparent url("menu/menu_artigos2.png") no-repeat scroll 0%;
+	display: block;	
+	height: 30px;
+	overflow: hidden;
+	text-decoration: none;
+	width: 114px;
+}
+
+a:hover#menu_artigos1, #menu_artigos2 {
+	background: transparent url("menu/menu_artigos2.png") no-repeat scroll 0%;	
+	height: 30px;
+	text-decoration: none;
+	width: 114px;
+}
+
+a#menu_ensaios1 {
+	background: transparent url("menu/menu_ensaios1.png") no-repeat scroll 0%;
+	display: block;	
+	height: 30px;
+	overflow: hidden;
+	text-decoration: none;
+	width: 114px;
+}
+
+a#menu_ensaios2 {
+	background: transparent url("menu/menu_ensaios2.png") no-repeat scroll 0%;
+	display: block;	
+	height: 30px;
+	overflow: hidden;
+	text-decoration: none;
+	width: 114px;
+}
+
+a:hover#menu_ensaios1, #menu_ensaios2 {
+	background: transparent url("menu/menu_ensaios2.png") no-repeat scroll 0%;	
+	height: 30px;
+	text-decoration: none;
+	width: 114px;
+}
+
+a#menu_ponto1 {
+	background: transparent url("menu/menu_ponto1.png") no-repeat scroll 0%;
+	display: block;	
+	height: 30px;
+	overflow: hidden;
+	text-decoration: none;
+	width: 114px;
+}
+
+a#menu_ponto2 {
+	background: transparent url("menu/menu_ponto2.png") no-repeat scroll 0%;
+	display: block;	
+	height: 30px;
+	overflow: hidden;
+	text-decoration: none;
+	width: 114px;
+}
+
+a:hover#menu_ponto1, #menu_ponto2 {
+	background: transparent url("menu/menu_ponto2.png") no-repeat scroll 0%;	
+	height: 30px;
+	text-decoration: none;
+	width: 114px;
+}
+
+.botao {
+	display: none;
+}
+
+/*
+=======================
+  ESTRUTURA
+=======================
+*/
+
+#site {
+	height:100%;
+	margin: 0px auto;
+	width: 862px;
+}
+	
+#sidebar {
+	background-image: url("estrutura/sidebar_bg2.png");
+	background-position: right;
+	background-repeat: repeat-y;
+	float: left;
+	height: 442px;
+	overflow: hidden;
+	width: 196px;
+}
+
+#apresentation {
+	background-image: url("estrutura/blackTexture.png");
+	background-position: right;
+	border: 1px #000 solid;
+	display: inline;
+	float: left;
+	height: 440px;
+	width: 196px;
+}
+
+#logo {
+	background: transparent url("estrutura/logo.png") no-repeat scroll 0%;
+	display: inline;
+	float: left;
+	height: 145px;
+	margin: 10px 0px 0px 6px;
+	width: 181px;
+}
+
+.description {
+	display: none;
+}
+
+#about {
+	background: transparent url("about.png") no-repeat scroll 0%;
+	display: inline;
+	float: left;
+	height: 44px;
+	margin: 10px 0px 0px 9px;
+	width: 177px;
+}
+
+#menu {
+	display: inline;
+	float: left;
+	margin: 18px 0px 0px 8px;
+}
+
+#content {
+	background-repeat: no-repeat;
+	background-position: top;
+	display: inline;
+	float:left;
+	margin-top: 0px;
+	padding: 0px 0px 0px 0px;
+	width: 666px;
+}
+
+#content_border, #content_border {
+	float:left;
+	margin: 0px;
+	width: 666px;
+}
+
+#content_border {
+	background-image: url("estrutura/contentbgLight.png");
+	background-position: right;
+	background-repeat: repeat-y;
+	background-color: #979797;
+}
+
+#slide {
+	background-image: url("destaques/header01.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	border: 1px #242424 solid;
+	border-top: none;
+	height: 182px;
+	margin: 0px 0px 5px 10px;
+	width: 644px;
+}
+
+#timeline_container {
+	background-color: #242424;
+	border: 1px #242424 solid;
+	height: 114px;
+	margin: 4px 0px 4px 10px;
+	width: 644px;
+}
+
+.title {
+	display: none;
+}
+
+/*
+=======================
+  INDEX
+=======================
+*/
+
+#titles {
+	border-bottom: 2px solid #eeeeee;
+}
+
+#boletins {
+	display: inline;
+	float: left;
+	height: 280px;
+	margin: 20px 0px 4px 10px;
+	width: 318px;
+}
+
+#boletins_title {
+	background: transparent url("titulos/titleBoletins.png") no-repeat;
+	border-bottom: 1px solid #eeeeee;
+	height: 23px;
+}
+
+#boletins_content {
+	margin: 6px 1px 0px 0px;
+}
+
+.boletim_item {
+	height: 51px;
+	margin: 10px 0px 0px 0px;
+	overflow: hidden;
+	padding-right: 6px;
+	width: 312px;
+}
+
+.boletim_item img {
+	border: 3px solid #575757;
+	display: inline;
+	clear: left;
+	float: left;
+	height: 42px;
+	margin: 3px 4px 0px 0px;
+	width: 42px;
+}
+
+.boletim_new {
+	display: inline;
+	width: 298px;
+}
+
+.boletim_new h2 {
+	font-size: 12px;
+	line-height: 17px;
+}
+
+.boletim_new p {
+	color: #202020;
+	line-height: 13px;
+}
+
+#ensaios {
+	display: inline;
+	float: left;
+	height: 280px;
+	margin: 20px 0px 4px 10px;
+	width: 318px;
+}
+
+#ensaios_title {
+	background: transparent url("titulos/titleEnsaios.png") no-repeat;
+	border-bottom: 1px solid #eeeeee;
+	height: 23px;
+}
+
+.ensaios_item {
+	margin: 10px 0px 0px 0px;
+	width: 318px;
+}
+
+.ensaio_description h2 {
+	font-size: 12px;
+	line-height: 17px;
+}
+
+#artigos {
+	display: inline;
+	float:left;
+	height: 230px;
+	margin: 8px 0px 8px 10px;
+	width: 318px;
+}
+
+#artigos_title{
+	background: transparent url("titulos/titleArtigos.png") no-repeat;
+	border-bottom: 1px solid #eeeeee;
+	height: 23px;
+	margin-bottom: 6px;
+}
+
+.artigo {
+	background: transparent url("estrutura/listas_bg.png") repeat-x;
+	display: inline;
+	float: left;
+	height: 74px;
+	margin: 10px 1px 10px 1px;
+	padding: 5px;
+	width: 308px;
+}
+
+.artigo_title {
+	margin: 0px;
+}
+
+.artigo h2 {
+	font-size: 14px;
+	line-height: 14px;
+	margin: 4px 3px 8px 3px;
+}
+
+.artigo p {
+	color: #242424;
+	line-height: 14px;
+	margin: 3px;
+}
+
+.artigo ul {
+	list-style: disc;
+	margin: 10px 0px 10px 0px;
+	padding-left: 16px;
+}
+
+.artigo ul li p {
+	display: inline;
+	font-size: 12px;
+	line-height: 14px;
+	margin: 0px 0px 16px 0px;
+}
+
+.linebg {
+	background: transparent url("estrutura/lineBG.png");
+	display: inline;
+	float: left;
+	height: 2px;
+	margin: 7px 0 2px;
+	overflow: hidden;
+	width: 318px;
+}
+
+#pontodevista {
+	display: inline;
+	float:left;
+	height: 230px;
+	margin: 8px 0px 8px 10px;
+	width: 318px;
+}
+
+#ponto_title {
+	background: transparent url("titulos/titlePonto.png") no-repeat;
+	border-bottom: 1px solid #eeeeee;
+	height: 23px;
+}
+
+.ponto {
+	background: transparent url("estrutura/listas_bg.png") repeat-x;
+	display: inline;
+	float: left;
+	height: 68px;
+	margin: 16px 1px 10px 0px;
+	padding: 5px;
+	width: 308px;
+}
+
+.ponto h2 {
+	font-size: 14px;
+	line-height: 14px;
+	margin: 4px 3px 8px 3px;
+}
+
+.ponto p {
+	color: #242424;
+	line-height: 14px;
+	margin: 3px;
+}
+
+#participacao {
+	background: url("estrutura/participacaobg.png") no-repeat;
+	background-color: #808080;
+	border-bottom: 1px #606060 solid;
+	display: inline;
+	float: left;
+	height: 190px;
+	margin: 20px 0px 8px 10px;
+	padding: 50px 14px 14px 14px;
+	width: 615px;
+}
+
+#participacao2 {
+	background: url("estrutura/participacaobg2.png") no-repeat;
+	background-color: #808080;
+	border-bottom: 1px #606060 solid;
+	display: inline;
+	float: left;
+	height: 190px;
+	margin: 20px 0px 8px 10px;
+	padding: 50px 14px 14px 14px;
+	width: 599px;
+}
+
+#comentarios, #comentario, #comentarios2 {
+	width: 595px;
+}
+
+#comentarios p, #comentarios2 p {
+	color: #242424;
+	font-size: 13px;
+	line-height: 16px;
+}
+
+#comentario {
+	margin-top: 20px;
+}
+
+#comentario p {
+	color: #111111;
+	font-size: 15px;
+	font-style: italic;
+	line-height: 20px;
+	text-align: center;
+}
+
+#footer {
+	border-top: 1px solid #202020;
+	clear: both;
+	display: inline;
+	float: left;
+	height: 44px;
+	margin: 20px 0px 0px 10px;
+	width: 645px;
+}
+
+#footer p {
+	color: #333;
+	padding-top: 2px;
+	text-align: center;
+}
+
+#footer_links p {
+	color: #222;
+}
+
+.voltar {
+	background: #777;
+	display: inline;
+	float: right;
+	height: 14px;
+	margin: 20px 0px;
+	padding: 3px 5px;
+	width: 156px;
+	text-align: right;
+}
+
+.voltar p {
+	color: #404040;
+	font-size: 13px;
+	line-height: 14px;
+	text-align: right;
+}
+
+.prox_pagina {
+	background: #777;
+	display: inline;
+	float: left;
+	height: 16px;
+	margin: 20px 0px 0px 10px;
+	padding: 2px 5px;
+	width: 450px;
+}
+
+.vermais {
+	padding: 5px 0px 0px 0px;
+}
+
+/*
+=======================
+  TEXTOS
+=======================
+*/
+
+.sobre_text, #boletim_text, .boletim_post, .artigo_text, .artigo_textindex, #artigo_dialog, .bibliografia_text, .pontod_text, .ponto {
+	clear: both;
+}
+
+/*
+=======================
+  BOLETINS
+=======================
+*/
+
+.boletim_post {
+	margin-bottom: 20px;
+}
+
+#boletim_title {
+	background: transparent url("titulos/boletinsTitle.png") no-repeat;
+	border-bottom: 1px solid #eeeeee;
+	height: 22px;
+	margin: 10px 0px 0px 10px;
+}
+
+#boletim_content {
+	display: inline;
+	float: left;
+	margin: 8px 0px 20px 10px;
+	width: 636px;
+}
+
+.boletim_texttitle {
+	background: url("boletins/titleBG.jpg") no-repeat;
+	display: inline;
+	float: left;
+	height: 50px;
+	margin: 10px 0px 10px 10px;
+	padding: 3px 0px 0 5px;
+	width: 621px;
+}
+
+.boletim_texttitle h2 {
+	display: inline;
+	font-size: 16px;
+	line-height: 18px;
+	margin: 0px 0px 0px 0px;
+}
+
+.boletim_texttitle p1 {
+	color: #222;
+	font-family: arial,verdana,sans-serif;
+	font-size: 12px;
+	line-height: 24px;
+	text-indent: 0px;
+}
+
+#boletim_post p2 {
+	color: #111;
+	font-size: 13px;
+	line-height: 40px;
+	margin: 0px 0px 0px 10px;
+	text-indent: 0px;
+}
+
+#boletim_text p {
+	color: #111;
+	font-size: 13px;
+	line-height: 20px;
+	margin: 15px 0px 0px 11px;
+	text-indent: 0px;
+}
+
+#boletim_text p2 {
+	color: #111;
+	font-size: 13px;
+	line-height: 40px;
+	margin: 0px 0px 0px 10px;
+	text-indent: 0px;
+}
+
+#boletim_text img {
+	border: 4px solid #555555;
+	display: inline;
+	margin: 0px 10px 5px 10px;
+}
+
+#boletim_dialog {
+	margin: 0px;
+	padding: 0px 0px 0px 140px;
+}
+
+#boletim_dialog p {
+	color: #222;
+	text-align: right;
+}
+
+.boletins_linebg {
+	background: transparent url("estrutura/lineBG.png");
+	display: inline;
+	float: left;
+	height: 2px;
+	margin: 20px 10px 5px 10px;
+	overflow: hidden;
+	width: 626px;
+}
+
+/*
+=======================
+  ARTIGOS
+=======================
+*/
+
+#artigo_title {
+	background: transparent url("titulos/artigosTitle.png") no-repeat;
+	border-bottom: 1px solid #eeeeee;
+	height: 22px;
+	margin: 10px 0px 0px 10px;
+}
+
+#artigo_content {
+	display: inline;
+	float: left;
+	margin: 8px 0px 20px 10px;
+	width: 636px;
+}
+
+.artigo_texttitle {
+	display: inline;
+	float: left;
+	margin: 20px 0px 20px 10px;
+	width: 460px;
+}
+
+.artigo_texttitle h2 {
+	display: inline;
+	font-size: 16px;
+	line-height: 16px;
+	margin: 0px 0px 0px 0px;
+}
+
+.artigo_texttitle p {
+	color: #222;
+	font-size: 12px;
+	line-height: 16px;
+	margin: 10px 0px 0px 0px;
+}
+
+.artigo_text h3, .artigo_textindex h3 {
+	color: #111;
+	font-size: 13px;
+	line-height: 20px;
+	margin: 25px 0px 0px 10px;
+	text-indent: 0px;
+}
+
+.artigo_text p {
+	color: #111;
+	font-size: 13px;
+	line-height: 20px;
+	margin: 5px 0px 20px 10px;
+	text-indent: 20px;
+}
+
+.artigo_textindex {
+	margin: 0px 0px 10px 1px;
+	text-indent: 0px;
+}
+
+.artigo_textindex p {
+	color: #111;
+	font-size: 13px;
+	margin: 0px 0px 0px 10px;
+	text-indent: 0px;
+}
+
+#artigo_dialog {
+	background: #777;
+	margin: 20px 0 30px 10px;
+	padding: 0px 10px 5px 140px;
+}
+
+#artigo_dialog p {
+	color: #222;
+	font-size: 13px;
+	line-height: 20px;
+	text-align: right;
+	text-indent: 20px;
+}
+
+/*
+=======================
+  ENSAIOS
+=======================
+*/
+
+#ensaio_slide1, #ensaio_slide2, #ensaio_slide3, #ensaio_slide4, #ensaio_slide5, #ensaio_slide6, #ensaio_slide7 {
+	border: #fff 1px solid;
+	clear: both;
+	height: 184px;
+	margin: 20px 0px 10px 10px;
+	width: 626px;
+}
+
+#ensaio_slide1 {
+	background-image: url("ensaios/EnsaioHeader01.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#ensaio_slide2 {
+	background-image: url("ensaios/EnsaioHeader02.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#ensaio_slide3 {
+	background-image: url("ensaios/EnsaioHeader03.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#ensaio_slide4 {
+	background-image: url("ensaios/EnsaioHeader04.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#ensaio_slide5 {
+	background-image: url("ensaios/EnsaioHeader05.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#ensaio_slide6 {
+	background-image: url("ensaios/EnsaioHeader06.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#ensaio_slide7 {
+	background-image: url("ensaios/EnsaioHeader07.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#ensaio_content {
+	display: inline;
+	float: left;
+	margin: 8px 0px 20px 10px;
+	width: 636px;
+}
+
+#ensaio_title {
+	background: transparent url("titulos/ensaiosTitle.png") no-repeat;
+	border-bottom: 1px solid #eeeeee;
+	height: 22px;
+	margin: 10px 0px 0px 10px;
+}
+
+.ensaio_texttitle {
+	display: inline;
+	float: left;
+	margin: 20px 0px 20px 10px;
+	width: 636px;
+}
+
+#datas {
+	clear: both;
+	display: inline;
+	float: right;
+	margin: 20px 0 30px 10px;
+	width: 100%;
+}
+
+#datas p {
+	color: #404040;
+	font-size: 13px;
+	text-align: right;
+}
+
+.ensaio_texttitle h2 {
+	display: inline;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 14px;
+	margin: 0px 0px 0px 0px;
+}
+
+.ensaio_texttitle p {
+	color: #404040;
+	font-size: 12px;
+	line-height: 16px;
+	margin: 10px 0px 0px 0px;
+}
+
+#ensaio_text p {
+	color: #111;
+	font-size: 13px;
+	line-height: 20px;
+	margin: 15px 0px 0px 10px;
+	text-indent: 20px;
+}
+
+#ensaio_text p2 {
+	color: #222;
+	font-size: 13px;
+	line-height: 40px;
+	margin: 0px 10px 0px 10px;
+}
+
+/*
+=======================
+  PONTO DE VISTA
+=======================
+*/
+
+#pontod_title {
+	background: transparent url("titulos/pontoTitle.png") no-repeat;
+	border-bottom: 1px solid #eeeeee;
+	height: 22px;
+	margin: 10px 0px 0px 10px;
+}
+
+#pontod_content {
+	display: inline;
+	float: left;
+	margin: 8px 0px 20px 10px;
+	width: 636px;
+}
+
+.pontod_texttitle {
+	display: inline;
+	float: left;
+	margin: 20px 0px 20px 10px;
+	width: 636px;
+}
+
+.pontod_texttitle h2 {
+	display: inline;
+	font-size: 16px;
+	margin: 0px 0px 0px 0px;
+}
+
+.pontod_texttitle p {
+	color: #222;
+	font-size: 12px;
+	line-height: 16px;
+	margin: 10px 0px 0px 0px;
+}
+
+.pontod_text h3 {
+	color: #111;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 10px 0px 10px 10px;
+	text-indent: 0px;
+}
+
+.pontod_text p {
+	color: #111;
+	font-size: 13px;
+	line-height: 20px;
+	margin: 5px 0px 20px 10px;
+	text-indent: 20px;
+}
+
+/*
+=======================
+  SOBRE
+=======================
+*/
+
+#sobre_title {
+	background: transparent url("titulos/sobreTitle.png") no-repeat;
+	border-bottom: 1px solid #eeeeee;
+	height: 22px;
+	margin: 10px 0px 0px 10px;
+}
+
+#sobre_content {
+	display: inline;
+	float: left;
+	margin: 8px 0px 20px 10px;
+	width: 636px;
+}
+
+.sobre_texttitle {
+	display: inline;
+	float: left;
+	margin: 20px 0px 20px 10px;
+	width: 460px;
+}
+
+.sobre_texttitle h2 {
+	display: inline;
+	font-size: 16px;
+	line-height: 16px;
+	margin: 0px 0px 0px 0px;
+}
+
+.sobre_texttitle p {
+	color: #222;
+	font-size: 12px;
+	line-height: 16px;
+	margin: 10px 0px 0px 0px;
+}
+
+.sobre_text h3 {
+	color: #111;
+	font-size: 13px;
+	line-height: 20px;
+	margin: 15px 0px 20px 10px;
+	text-indent: 0px;
+}
+
+.sobre_text p {
+	color: #111;
+	font-size: 13px;
+	line-height: 20px;
+	margin: 15px 0px 0px 10px;
+	text-indent: 20px;
+}
+
+/*
+=======================
+  BIBLIOGRAFIA
+=======================
+*/
+
+#bibliografia_title {
+	background: transparent url("titulos/bibliografiaTitle.png") no-repeat;
+	border-bottom: 1px solid #eeeeee;
+	height: 22px;
+	margin: 10px 0px 0px 10px;
+}
+
+#bibliografia_content {
+	display: inline;
+	float: left;
+	margin: 8px 0px 20px 10px;
+	width: 636px;
+}
+
+.bibliografia_texttitle {
+	display: inline;
+	float: left;
+	margin: 20px 0px 20px 10px;
+	width: 460px;
+}
+
+.bibliografia_texttitle h2 {
+	display: inline;
+	font-size: 16px;
+	line-height: 16px;
+	margin: 0px 0px 0px 0px;
+}
+
+.bibliografia_texttitle p {
+	color: #222;
+	font-size: 12px;
+	line-height: 16px;
+	margin: 10px 0px 0px 0px;
+}
+
+.bibliografia_text h3 {
+	color: #111;
+	font-size: 13px;
+	line-height: 20px;
+	margin: 30px 0px 0px 10px;
+	text-indent: 0px;
+}
+
+.bibliografia_text p {
+	color: #111;
+	font-size: 12px;
+	line-height: 13px;
+	margin: 10px 0px 0px 10px;
+}
